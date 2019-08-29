@@ -1,0 +1,115 @@
+\begin{frame}{Notations}
+	
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+				\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+				\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+				\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+				\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+					
+					
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			 $ C = \{c_1,c_2,...,c_{N_C} \} $ is the set of \textit{cities}
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Notations Continued..}
+	
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			\draw[thick] (n1) -- (n2);
+			\draw[thick] (n1) -- (n4);
+			\draw[thick] (n1) -- (n3);
+
+			\draw[thick] (n2) -- (n4);
+			\draw[thick] (n2) -- (n3);
+
+			\draw[thick] (n3) -- (n4);
+
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			$ L = \{l_{c_{i}c_{j}}\ |\ (c_i,c_j)\ \in  \tilde{C}\},\ |L| \leq N^{2}_C $ is the set of \textit{connections} between \textit{cities}.
+		\end{column}
+	\end{columns}
+	
+\end{frame}
+
+
+
+\begin{frame}{Notations Continued..}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			\draw[thick] (n1) -- node[left] {1}(n2);
+			\draw[thick] (n1) -- node[left] {2}(n4);
+			\draw[thick] (n1) -- node[right] {3}(n3);
+			
+			\draw[thick] (n2) -- node[below] {4}(n4);
+			\draw[thick] (n2) -- node[below] {5} (n3);
+			
+			\draw[thick] (n3) -- node[below] {6} (n4);
+			
+			%	\draw[->, thick] (cond) -- node[right] {\textcolor{red}{No}} (prob);
+			
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			$ J_{c_ic_j} \equiv J(l_{c_ic_j}) $ is a \emph{cost} function associated with each \textit{connection} $l_{c_ic_j} \in L $.
+		\end{column}
+	\end{columns}
+	
+\end{frame}
+
+
+\begin{frame}{Notations Continued..}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			\draw[thick,red,->] (n1) -- node[left] {1}(n2);
+			\draw[thick] (n1) -- node[left] {2}(n4);
+			\draw[thick,red,<-] (n1) -- node[right] {3}(n3);
+			
+			\draw[thick,red,->] (n2) -- node[below] {4}(n4);
+			\draw[thick] (n2) -- node[below] {5} (n3);
+			
+			\draw[thick,red,<-] (n3) -- node[below] {6} (n4);
+			
+			%	\draw[->, thick] (cond) -- node[right] {\textcolor{red}{No}} (prob);
+			
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			 $ J_{\psi}(L) $ is the \emph{cost function} associated to each solution 	$\psi $. It is the summation of all the costs $ J(c_i,c_j) $ of all the connections belonging to the solution $\psi $ .
+		\end{column}
+	\end{columns}
+	\vspace{\baselineskip} 	\vspace{\baselineskip}
+	\hskip1.75cm\textcolor{red}{\centering The optimal cost here is $1 + 4 + 6 + 3 = 14 $ }
+	
+\end{frame}

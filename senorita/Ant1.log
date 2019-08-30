@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.29)  29 AUG 2019 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.29)  30 AUG 2019 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1455,62 +1455,16 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./TSPGraph.pdf_tex
-<TSPGraph.pdf, id=94, page=1, 290.51349pt x 215.6055pt>
-File: TSPGraph.pdf Graphic file (type pdf)
+] [3
 
-<use TSPGraph.pdf, page 1>
-Package pdftex.def Info: TSPGraph.pdf, page1 used on input line 52.
-(pdftex.def)             Requested size: 261.46034pt x 194.04973pt.
+] [4
 
-<TSPGraph.pdf, id=95, page=2, 290.51349pt x 215.6055pt>
-File: TSPGraph.pdf Graphic file (type pdf)
-
-<use TSPGraph.pdf, page 2>
-Package pdftex.def Info: TSPGraph.pdf, page2 used on input line 61.
-(pdftex.def)             Requested size: 261.46034pt x 194.04973pt.
-) [3
-
- <./TSPGraph.pdf> <./TSPGraph.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./TSPGraph.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
->] (./TSPGraphSolution.pdf_tex
-<TSPGraphSolution.pdf, id=125, page=1, 290.51349pt x 215.74196pt>
-File: TSPGraphSolution.pdf Graphic file (type pdf)
-
-<use TSPGraphSolution.pdf, page 1>
-Package pdftex.def Info: TSPGraphSolution.pdf, page1 used on input line 52.
-(pdftex.def)             Requested size: 261.46034pt x 194.17255pt.
-
-<TSPGraphSolution.pdf, id=126, page=2, 290.51349pt x 215.74196pt>
-File: TSPGraphSolution.pdf Graphic file (type pdf)
-
-<use TSPGraphSolution.pdf, page 2>
-Package pdftex.def Info: TSPGraphSolution.pdf, page2 used on input line 61.
-(pdftex.def)             Requested size: 261.46034pt x 194.17255pt.
-
-<TSPGraphSolution.pdf, id=127, page=3, 290.51349pt x 215.74196pt>
-File: TSPGraphSolution.pdf Graphic file (type pdf)
-
-<use TSPGraphSolution.pdf, page 3>
-Package pdftex.def Info: TSPGraphSolution.pdf, page3 used on input line 63.
-(pdftex.def)             Requested size: 261.46034pt x 194.17255pt.
-) [4
-
- <./TSPGraphSolution.pdf> <./TSPGraphSolution.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./TSPGraphSolution.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
-> <./TSPGraphSolution.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./TSPGraphSolution.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->] [5
+] [5
 
 ] [6
 
-] [7
+]
+[7
 
 ] [8
 
@@ -1521,7 +1475,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./TSPGraphSolution.pdf): PDF inclusion:
 ] [11
 
 ] (./AntSearch.pdf_tex
-<AntSearch.pdf, id=343, page=1, 369.38pt x 217.51158pt>
+<AntSearch.pdf, id=334, page=1, 369.38pt x 217.51158pt>
 File: AntSearch.pdf Graphic file (type pdf)
 
 <use AntSearch.pdf, page 1>
@@ -1530,21 +1484,21 @@ Package pdftex.def Info: AntSearch.pdf, page1 used on input line 52.
 ) [12
 
  <./AntSearch.pdf>] (./AntSearch2.pdf_tex
-<AntSearch2.pdf, id=373, page=1, 369.38pt x 217.51158pt>
+<AntSearch2.pdf, id=364, page=1, 369.38pt x 217.51158pt>
 File: AntSearch2.pdf Graphic file (type pdf)
 
 <use AntSearch2.pdf, page 1>
 Package pdftex.def Info: AntSearch2.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 221.63023pt x 130.50793pt.
 
-<AntSearch2.pdf, id=374, page=2, 369.38pt x 217.51158pt>
+<AntSearch2.pdf, id=365, page=2, 369.38pt x 217.51158pt>
 File: AntSearch2.pdf Graphic file (type pdf)
 
 <use AntSearch2.pdf, page 2>
 Package pdftex.def Info: AntSearch2.pdf, page2 used on input line 55.
 (pdftex.def)             Requested size: 221.63023pt x 130.50793pt.
 
-<AntSearch2.pdf, id=375, page=3, 369.38pt x 217.51158pt>
+<AntSearch2.pdf, id=366, page=3, 369.38pt x 217.51158pt>
 File: AntSearch2.pdf Graphic file (type pdf)
 
 <use AntSearch2.pdf, page 3>
@@ -1561,21 +1515,21 @@ ple pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./AntSearch2.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >] (./AntSearch3.pdf_tex
-<AntSearch3.pdf, id=405, page=1, 369.38pt x 217.51158pt>
+<AntSearch3.pdf, id=396, page=1, 369.38pt x 217.51158pt>
 File: AntSearch3.pdf Graphic file (type pdf)
 
 <use AntSearch3.pdf, page 1>
 Package pdftex.def Info: AntSearch3.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 221.63023pt x 130.50793pt.
 
-<AntSearch3.pdf, id=406, page=2, 369.38pt x 217.51158pt>
+<AntSearch3.pdf, id=397, page=2, 369.38pt x 217.51158pt>
 File: AntSearch3.pdf Graphic file (type pdf)
 
 <use AntSearch3.pdf, page 2>
 Package pdftex.def Info: AntSearch3.pdf, page2 used on input line 55.
 (pdftex.def)             Requested size: 221.63023pt x 130.50793pt.
 
-<AntSearch3.pdf, id=407, page=3, 369.38pt x 217.51158pt>
+<AntSearch3.pdf, id=398, page=3, 369.38pt x 217.51158pt>
 File: AntSearch3.pdf Graphic file (type pdf)
 
 <use AntSearch3.pdf, page 3>
@@ -1591,13 +1545,13 @@ ple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./AntSearch3.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] <AntPheromone.png, id=436, 652.4375pt x 457.71pt>
+>] <AntPheromone.png, id=427, 652.4375pt x 457.71pt>
 File: AntPheromone.png Graphic file (type png)
  <use AntPheromone.png>
-Package pdftex.def Info: AntPheromone.png used on input line 113.
+Package pdftex.def Info: AntPheromone.png used on input line 151.
 (pdftex.def)             Requested size: 239.60567pt x 168.09291pt.
 
-Overfull \vbox (44.4115pt too high) detected at line 113
+Overfull \vbox (44.4115pt too high) detected at line 151
  []
 
 [15
@@ -1605,10 +1559,10 @@ Overfull \vbox (44.4115pt too high) detected at line 113
  <./AntPheromone.png>]
 File: AntPheromone.png Graphic file (type png)
  <use AntPheromone.png>
-Package pdftex.def Info: AntPheromone.png used on input line 113.
+Package pdftex.def Info: AntPheromone.png used on input line 151.
 (pdftex.def)             Requested size: 239.60567pt x 168.09291pt.
 
-Overfull \vbox (44.4115pt too high) detected at line 113
+Overfull \vbox (44.4115pt too high) detected at line 151
  []
 
 [16
@@ -1616,34 +1570,34 @@ Overfull \vbox (44.4115pt too high) detected at line 113
 ]
 File: AntPheromone.png Graphic file (type png)
  <use AntPheromone.png>
-Package pdftex.def Info: AntPheromone.png used on input line 113.
+Package pdftex.def Info: AntPheromone.png used on input line 151.
 (pdftex.def)             Requested size: 239.60567pt x 168.09291pt.
 
-Overfull \vbox (44.4115pt too high) detected at line 113
+Overfull \vbox (44.4115pt too high) detected at line 151
  []
 
 [17
 
-] <AntPheromone3.png, id=519, 961.5925pt x 457.71pt>
+] <AntPheromone3.png, id=510, 961.5925pt x 457.71pt>
 File: AntPheromone3.png Graphic file (type png)
 
 <use AntPheromone3.png>
-Package pdftex.def Info: AntPheromone3.png used on input line 125.
+Package pdftex.def Info: AntPheromone3.png used on input line 163.
 (pdftex.def)             Requested size: 342.2953pt x 162.93167pt.
 
-Overfull \vbox (39.25026pt too high) detected at line 125
+Overfull \vbox (39.25026pt too high) detected at line 163
  []
 
 [18
 
- <./AntPheromone3.png>] <AntPheromone2.png, id=547, 961.5925pt x 457.71pt>
+ <./AntPheromone3.png>] <AntPheromone2.png, id=538, 961.5925pt x 457.71pt>
 File: AntPheromone2.png Graphic file (type png)
 
 <use AntPheromone2.png>
-Package pdftex.def Info: AntPheromone2.png used on input line 138.
+Package pdftex.def Info: AntPheromone2.png used on input line 176.
 (pdftex.def)             Requested size: 342.2953pt x 162.93167pt.
 
-Overfull \vbox (39.25026pt too high) detected at line 138
+Overfull \vbox (39.25026pt too high) detected at line 176
  []
 
 [19
@@ -1651,31 +1605,31 @@ Overfull \vbox (39.25026pt too high) detected at line 138
  <./AntPheromone2.png>]
 File: AntPheromone3.png Graphic file (type png)
  <use AntPheromone3.png>
-Package pdftex.def Info: AntPheromone3.png used on input line 151.
+Package pdftex.def Info: AntPheromone3.png used on input line 189.
 (pdftex.def)             Requested size: 342.2953pt x 162.93167pt.
 
-Overfull \vbox (39.25026pt too high) detected at line 151
+Overfull \vbox (39.25026pt too high) detected at line 189
  []
 
 [20
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 181.
+LaTeX Font Info:    Try loading font information for U+msa on input line 217.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 181.
+LaTeX Font Info:    Try loading font information for U+msb on input line 217.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Dorigo.jpg, id=603, 289.08pt x 433.62pt>
+<Dorigo.jpg, id=594, 289.08pt x 433.62pt>
 File: Dorigo.jpg Graphic file (type jpg)
  <use Dorigo.jpg>
-Package pdftex.def Info: Dorigo.jpg used on input line 181.
+Package pdftex.def Info: Dorigo.jpg used on input line 217.
 (pdftex.def)             Requested size: 119.80283pt x 179.70413pt.
 
-Overfull \vbox (0.70015pt too high) detected at line 181
+Overfull \vbox (0.70015pt too high) detected at line 217
  []
 
 [21
@@ -1684,65 +1638,66 @@ Overfull \vbox (0.70015pt too high) detected at line 181
 
 ] [23
 
+] [24
+
+] [25
+
+] [26
+
 ]
-<AntWithMemory.png, id=686, 594.22pt x 568.1225pt>
+<AntWithMemory.png, id=760, 594.22pt x 568.1225pt>
 File: AntWithMemory.png Graphic file (type png)
  <use AntWithMemory.png>
-Package pdftex.def Info: AntWithMemory.png used on input line 220.
+Package pdftex.def Info: AntWithMemory.png used on input line 360.
 (pdftex.def)             Requested size: 205.37926pt x 196.35788pt.
-
-[24
-
- <./AntWithMemory.png>] <WhereToGo.png, id=716, 564.1075pt x 473.77pt>
-File: WhereToGo.png Graphic file (type png)
-
-<use WhereToGo.png>
-Package pdftex.def Info: WhereToGo.png used on input line 242.
-(pdftex.def)             Requested size: 205.37926pt x 172.48724pt.
- [25
-
- <./WhereToGo.png>] [26
-
-]
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 288.
 
 [27
 
-] [28
+ <./AntWithMemory.png>] <WhereToGo.png, id=789, 564.1075pt x 473.77pt>
+File: WhereToGo.png Graphic file (type png)
 
-] [29
+<use WhereToGo.png>
+Package pdftex.def Info: WhereToGo.png used on input line 382.
+(pdftex.def)             Requested size: 205.37926pt x 172.48724pt.
+ [28
 
-] [30
+ <./WhereToGo.png>] [29
+
+]
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 428.
+
+[30
 
 ] [31
 
+] [32
+
+] [33
+
+] [34
+
 ]
-Overfull \hbox (11.0997pt too wide) in paragraph at lines 401--401
+Overfull \hbox (11.0997pt too wide) in paragraph at lines 540--540
  [][]\OT1/cmss/m/n/10 completed? 
  []
 
 
-Overfull \hbox (1.00793pt too wide) in paragraph at lines 401--401
+Overfull \hbox (1.00793pt too wide) in paragraph at lines 540--540
  [][][][]\OT1/cmss/m/n/10.95 compute[]probabilities 
  []
 
-
-Overfull \hbox (6.83693pt too wide) in paragraph at lines 401--401
-[][]  
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 401
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 540
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 401.
+LaTeX Font Info:    No file OMScmss.fd. on input line 540.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 401.
+(Font)              for symbol `textbraceleft' on input line 540.
 
-[32
+[35
 
-] [33
+] [36
 
 ]
 \tf@nav=\write6
@@ -1754,11 +1709,11 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 \tf@snm=\write8
 \openout8 = `Ant1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 548.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 548.
  (./Ant1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 548.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 548.
 Package rerunfilecheck Info: File `Ant1.out' has not changed.
 (rerunfilecheck)             Checksum: 1D2F5750C2E718A6CACD15ECC78670DC;42.
 
@@ -1769,16 +1724,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 548.
  ) 
 Here is how much of TeX's memory you used:
- 22900 strings out of 494953
- 447878 string characters out of 6180977
+ 22949 strings out of 494953
+ 448396 string characters out of 6180977
  528895 words of memory out of 5000000
- 25552 multiletter control sequences out of 15000+600000
- 16822 words of font info for 62 fonts, out of 8000000 for 9000
+ 25601 multiletter control sequences out of 15000+600000
+ 17129 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,17n,79p,411b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,79p,411b,1000s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1793,10 +1748,10 @@ s/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pf
 b>
-Output written on Ant1.pdf (33 pages, 681210 bytes).
+Output written on Ant1.pdf (36 pages, 686425 bytes).
 PDF statistics:
- 1031 PDF objects out of 1200 (max. 8388607)
- 929 compressed objects within 10 object streams
- 69 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1106 PDF objects out of 1200 (max. 8388607)
+ 1005 compressed objects within 11 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

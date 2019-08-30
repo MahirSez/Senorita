@@ -37,27 +37,65 @@
 
 
 \begin{frame}{Input:}
-	\begin{figure}
-		\centering
-		\def\svgscale{0.9}
-		\input{TSPGraph.pdf_tex}
-	\end{figure}
+	\centering
+	\begin{tikzpicture}
+	\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+	\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+	\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+	\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+	\node[draw, circle, xshift = 5cm,yshift = 4cm,text width = 0.1cm, align=center, fill = carolinablue] (n5) {};
+	
+	\node[draw, rectangle, xshift = .005cm, text width = .8cm, align=center, fill = white, right of = n5, white] (n6) {\textcolor{black}{cities}};
+	
+	
+	\draw[thick] (n1) -- node[left] {1}(n2);
+	\draw[thick] (n1) -- node[left] {2}(n4);
+	\draw[thick] (n1) -- node[right] {3}(n3);
+	
+	\draw[thick] (n2) -- node[below] {4}(n4);
+	\draw[thick] (n2) -- node[below] {5} (n3);
+	
+	\draw[thick] (n3) -- node[below] {6} (n4);
+	
+	%	\draw[->, thick] (cond) -- node[right] {\textcolor{red}{No}} (prob);
+	
+	\end{tikzpicture}
 \end{frame}
 
 
 \begin{frame}{Output:}
-	\begin{figure}
-		\centering
-		\def\svgscale{0.9}
-		\input{TSPGraphSolution.pdf_tex}
-	\end{figure}
+	\centering
+	\begin{tikzpicture}
+	\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+	\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+	\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+	\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+	\node[draw, circle, xshift = 5cm,yshift = 4cm,text width = 0.1cm, align=center, fill = carolinablue] (n5) {};
+	
+	\node[draw, rectangle, xshift = .005cm, text width = .8cm, align=center, fill = white, right of = n5, white] (n6) {\textcolor{black}{cities}};
+	
+	
+	\draw[ultra thick,red,->] (n1) -- node[left] {1}(n2);
+	\draw[thick] (n1) -- node[left] {2}(n4);
+	\draw[ultra thick,red,<-] (n1) -- node[right] {3}(n3);
+	
+	\draw[ultra thick,red,->] (n2) -- node[below] {4}(n4);
+	\draw[thick] (n2) -- node[below] {5} (n3);
+	
+	\draw[ultra thick,red,<-] (n3) -- node[below] {6} (n4);
+	
+	%	\draw[->, thick] (cond) -- node[right] {\textcolor{red}{No}} (prob);
+	
+	\end{tikzpicture}
 \end{frame}
 
 \begin{frame}{Known Methods}
+
 	\begin{itemize}
 		\item <1->	Backtracking\\
 					\uncover<2->{Issue - Complexity is exponential.}\\
 					\uncover<3->{\textbf{Not Good Enough!}}
+		\vspace{\baselineskip}	\vspace{\baselineskip}
 		\uncover<4->{\item <2->	Bitmask DP\\}
 					\uncover<5->{Issue - Works efficiently when input is small.}\\
 					\uncover<6->{\textbf{Not Good Enough!}}
@@ -66,7 +104,7 @@
 
 
 \begin{frame}{Motivation}
-	
+	\centering
 	\textbf{We will use Ant Colony Optimization (ACO) to solve TSP more efficiently.}
 \end{frame}
 
@@ -160,12 +198,10 @@
 		\begin{itemize}
 			\item In the year 1991, Marco Dorigo proposed an algorithm called "Ant System".
 			
-%			\item <2-> It was a novel heuristic approach to solve combinatorial optimization problems.
+			\vspace{\baselineskip}	\vspace{\baselineskip}
 			
 			\item  AS was first applied to the Traveling Salesman Problem.
 			
-%			\item <3-> Later it was extended to a diverse set of optimization problems :
-%			Multiple Knapsack(Leguizamón \& Michalewicz), Vehicle routing(Bullnheimer), Graph Coloring(Costa \& Hertz) and so on.
 			
 		\end{itemize}
 	   	\column{0.5\textwidth}
@@ -181,22 +217,126 @@
 \end{frame}
 
 \begin{frame}{Results}
-	The ACO meta-heuristic is the result of an effort to define a common framework for all the versions of AS.
+	\centering
+	A more efficient algorithm to solve TSP is the ACO meta-heuristic.
 \end{frame}
 
 \section{Methods}
 \begin{frame}{Notations}
-	\begin{itemize}
-		\item $ C = \{c_1,c_2,...,c_{N_C} \} $ is a finite set of \textit{components}.
+	
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			
+			\end{tikzpicture}
+		\end{column}
 		
-		\item $ L = \{l_{c_{i}c_{j}}\ |\ (c_i,c_j)\ \in  \tilde{C}\},\ |L| \leq N^{2}_C $ is a finite set of possible \textit{connections/transitions} among the elements of $ \tilde{C} $, where $ \tilde{C} $ is a subset of the Cartesian product $ C\times C $.
-		
-		\item $ J_{c_ic_j} \equiv J(l_{c_ic_j}, t) $ is a \emph{connection cost} function associated to each $l_{c_ic_j} \in L $, possibly parameterized by some time measure $t$.
-		
-		\item $ \psi $ is a \emph{solution} of the problem.
-		\item $ J_{\psi}(L,t) $ is a \emph{cost} associated to each solution 	$\psi $.  $ J_{\psi}(L,t) $ is a function of all the costs $ J(c_i,c_j) $ of all the connections belonging to the solution $\psi $ .
+		\begin{column}{0.5\textwidth}
+			$ C = \{c_1,c_2,...,c_{N_C} \} $ is the set of \textit{cities}.
+		\end{column}
+	\end{columns}
+	
+\end{frame}
 
-	\end{itemize}
+
+\begin{frame}{Notations Continued..}
+	
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			\draw[thick] (n1) -- (n2);
+			\draw[thick] (n1) -- (n4);
+			\draw[thick] (n1) -- (n3);
+			
+			\draw[thick] (n2) -- (n4);
+			\draw[thick] (n2) -- (n3);
+			
+			\draw[thick] (n3) -- (n4);
+			
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.5\textwidth}
+			$ L = \{l_{c_{i}c_{j}}\ |\ (c_i,c_j)\ \in  \tilde{C}\},\ |L| \leq N^{2}_C $ is the set of \textit{connections} between \textit{cities}.
+		\end{column}
+	\end{columns}
+	
+\end{frame}
+
+
+
+\begin{frame}{Notations Continued..}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			\draw[thick] (n1) -- node[left] {1}(n2);
+			\draw[thick] (n1) -- node[left] {2}(n4);
+			\draw[thick] (n1) -- node[right] {3}(n3);
+			
+			\draw[thick] (n2) -- node[below] {4}(n4);
+			\draw[thick] (n2) -- node[below] {5} (n3);
+			
+			\draw[thick] (n3) -- node[below] {6} (n4);
+			
+			%	\draw[->, thick] (cond) -- node[right] {\textcolor{red}{No}} (prob);
+			
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.5\textwidth}
+			$ J_{c_ic_j} \equiv J(l_{c_ic_j}) $ is a \emph{cost} function associated with each \textit{connection} $l_{c_ic_j} \in L $.
+		\end{column}
+	\end{columns}
+	
+\end{frame}
+
+
+\begin{frame}{Notations Continued..}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{tikzpicture}
+			\node[draw, circle, text width = 0.4cm, align=center, fill = carolinablue] (n2){2};
+			\node[draw, circle, xshift = 5cm,text width = 0.4cm, align=center, fill = carolinablue] (n3){3};
+			\node[draw, circle, text width = 0.4cm,xshift = 2.5cm,yshift = 4cm, align=center, fill = carolinablue] (n1){1};
+			\node[draw, circle, xshift = 2.5cm,yshift = 1.7cm,text width = 0.4cm, align=center, fill = carolinablue] (n4){4};
+			
+			\draw[ultra thick,red,->] (n1) -- node[left] {1}(n2);
+			\draw[thick] (n1) -- node[left] {2}(n4);
+			\draw[ultra thick,red,<-] (n1) -- node[right] {3}(n3);
+			
+			\draw[ultra thick,red,->] (n2) -- node[below] {4}(n4);
+			\draw[thick] (n2) -- node[below] {5} (n3);
+			
+			\draw[ultra thick,red,<-] (n3) -- node[below] {6} (n4);
+			
+			%	\draw[->, thick] (cond) -- node[right] {\textcolor{red}{No}} (prob);
+			
+			\end{tikzpicture}
+		\end{column}
+		
+		\begin{column}{0.5\textwidth}
+			$ J_{\psi}(L) $ is the \emph{cost function} associated to each solution 	$\psi $. It is the summation of all the costs $ J(c_i,c_j) $ of all the connections belonging to the solution $\psi $ .
+		\end{column}
+	\end{columns}
+	\vspace{\baselineskip} 	\vspace{\baselineskip}
+	\centering
+	\textcolor{red}{\centering The optimal cost here is $1 + 4 + 6 + 3 = 14 $ }
+	
 \end{frame}
 
 \begin{frame}{Ant Properties}
@@ -260,13 +400,14 @@
 		\Large Ant-routing table, $ \mathnormal{a} $
 		\end{column}
 		\begin{column}{0.4\textwidth}
+			\centering
 			Here, $ \mathnormal{a_{ij}} $ is a measurement of the quality of the edge from node $i$ to node $j$.
 		\end{column}
 	\end{columns}
 \end{frame}
 
 \begin{frame}{Formula for ant-routing table}
-	
+
 	The formula for updating the ant-routing table is:
 	
 	{\Large $$
@@ -274,7 +415,6 @@
 		{\displaystyle\sum_{l \in \mathcal{N}_i} {[\uptau_{il}(t)]}^{\alpha} {[\eta_{il}]}^{\beta} } 
 		\ \ \ \ \ \ \ \forall j \in \mathcal{N}_i
 		$$}
-	
 	
 	\begin{itemize}
 		\item  $ {\uptau_{ij}} $ is the intensity of pheromone trail of the  edge $ 	\mathnormal{l_{ij}} $
@@ -288,7 +428,6 @@
 \end{frame}
 
 \begin{frame}{Formula for ant-routing table Continued}
-	
 	The probability $\mathnormal{p}^{k}_{ij}(t)$ with which an ant $k$ located in city $i$ chooses the city $ j \in \mathcal{N}_i^k $ to move to at the $t$-th  iteration is: 
 	
 	{\Large 
@@ -313,7 +452,7 @@
 
 
 \begin{frame}{\textbf{procedure} ACO\_meta-heuristic()}
-	
+	\centering
 	\begin{tikzpicture}
 	\node[draw, ellipse, text width = 1.5cm, align=center, yshift=-2cm, fill = carolinablue] (start){Start};
 	
@@ -338,7 +477,7 @@
 \end{frame}
 
 \begin{frame}{\textbf{procedure} generate\_ants()}
-	
+	\centering
 	\begin{tikzpicture}
 	\node[draw, ellipse, text width = 1.5cm, align=center, yshift=-2cm, fill = carolinablue] (start){Start};
 	
@@ -364,7 +503,7 @@
 
 \begin{frame}{\textbf{procedure} activate\_new\_ant() \{Ant lifecycle\}}
 	
-	
+	\centering
 	\begin{tikzpicture}
 	\node[draw, ellipse, text width = 1.5cm, align=center, fill = carolinablue] (start){\small Start};
 	
@@ -372,11 +511,11 @@
 	
 	\node[draw, diamond, align=center, below of= initialize, text width = 1.4cm, yshift = -.9cm, aspect=2, fill = carolinablue] (cond){\small cycle\\\_completed?};
 	
-	\node[draw, rectangle, align=center, right of= cond, text width = 3.5cm, xshift=4.25cm, fill = carolinablue] (update){online\_delayed\\\_pheromone\_update()};
+	\node[draw, rectangle, align=center, right of= cond, text width = 3.5cm, xshift=4cm, fill = carolinablue] (update){online\_delayed\\\_pheromone\_update()};
 	
 	\node[draw, rectangle, align=center, below of= cond, , text width = 3.4cm, yshift = -1.5cm, fill = carolinablue] (prob){compute\_probabilities\\\_from\_ant\_routing\\\_table()};
 	
-	\node[draw, ellipse, right of = prob, text width = 1.5cm, xshift = 4.25cm, align=center, fill = carolinablue] (end){End};
+	\node[draw, ellipse, right of = prob, text width = 1.5cm, xshift = 4cm, align=center, fill = carolinablue] (end){End};
 	
 	\node[draw, rectangle, align=center, above of= end, text width = 1cm, yshift=.2cm, fill = carolinablue] (die){die()};
 	
@@ -403,6 +542,7 @@
 
 
 \begin{frame}{Conclusions}
-	  In this paper we briefly described ACO and its basic applications. We mainly focused on the use in Traveling Salesman Problem. 
+	\centering
+	\large ACO is a new weapon to attack NP-hard graph problem!!\\
 \end{frame}
 \end{document}
